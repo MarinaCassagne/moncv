@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +9,81 @@
 </head>
 
 <body>
-   
-    
+
+    <form>
+
+        <p>
+            <label>
+                Société :
+                <input id="Société" name="company" type="text" required />
+
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Prénom :
+                <input id="Prénom" name="first name" type="text" required />
+
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Nom :
+                <input id="Nom" name="last name" type="text" required />
+
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Fonction :
+                <input id="Fonction" name="fonction" type="text" required />
+
+            </label>
+        </p>
+
+        <p>
+            <label>
+                Téléphone :
+                <input id="Téléphone" name="Phone" type="tel" required />
+
+            </label>
+        </p>
+
+        <p>
+            <label>
+                E-mail :
+                <input id="E-mail" name="e-mail" type="email" required />
+
+            </label>
+        </p>
+
+        <p>
+            Type d'opportunité :
+            <select>
+                <Option name="stage" required>stage</Option>
+                <Option name="alternance" required>alternance</Option>
+                <Option name="emploi" required>emploi</Option>
+            </select>
+        </p>
+
+        <p>
+            Message :
+            <label for="Message">Tell us your story:</label>
+
+            <textarea id="story" name="story" rows="5" cols="33">
+Description de l'opportunité
+</textarea>
+        </p>
+
+
+
+    </form>
+
+
+
 </body>
 
 </html>
