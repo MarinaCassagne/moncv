@@ -1,3 +1,93 @@
+* {
+  font-family: Segoe UI, sans-serif;
+  color: rgb(0, 32, 96);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  min-height: 500px;
+  width: 90%;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: left;
+  margin: 20px auto;
+  vertical-align: middle;
+  box-shadow: 3px 4px 8px 0px rgba(49, 63, 70, 0.829);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+/* Typographie */
+
 h1 {
-    color: aqua;
+  font-size: 2rem;
+  color: rgb(0, 153, 153);
+  letter-spacing: 3px;
+  text-shadow: 2px 0px 2px #fff;
+  margin: 0 15px;
+}
+
+h2 {
+  font-size: 1rem;
+  margin: 0 0 5px 0;
+}
+
+/* Éléments */
+
+p {
+  margin: 0 0 20px 0;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  margin: 6px;
+}
+
+/* Classe */
+
+.top {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vignette p {
+  padding: 0 0 0 15px;
+}
+
+.contact {
+  margin: 15px;
+}
+
+.stage {
+  min-width: 80%;
+  position: relative;
+  background: rgba(219, 238, 244);
+  border-radius: 15px;
+  box-shadow: 0 0 0 black;
+  padding: 15px;
+}
+/* id */
+#PhotoPro {
+  border-radius: 15px;
+  max-height:100%;
+  width:auto;
+}
+
+.contact li img {
+  vertical-align: middle;
+}
+
+.stage li img {
+  vertical-align: middle;
 }
