@@ -1,11 +1,16 @@
 * {
-  font-family: Segoe UI, sans-serif;
-  color: rgb(0, 32, 96);
   margin: 0;
   padding: 0;
 }
 
+body {
+  font-family: Segoe UI, sans-serif;
+  color: rgb(0, 32, 96);
+  background: #e9ebf8;
+}
+
 header {
+  background: #fefffe;
   min-height: 500px;
   width: 90%;
   padding: 15px;
@@ -13,32 +18,27 @@ header {
   text-align: left;
   margin: 20px auto;
   vertical-align: middle;
-  box-shadow: 3px 4px 8px 0px rgba(49, 63, 70, 0.829);
+  box-shadow: 3px 4px 8px 0px rgba(43, 121, 160, 0.829);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-evenly;
 }
 
-/* Typographie */
+main {
+}
+
+/* Éléments */
 
 h1 {
   font-size: 2rem;
   color: rgb(0, 153, 153);
   letter-spacing: 3px;
-  text-shadow: 2px 0px 2px #fff;
   margin: 0 15px;
 }
 
 h2 {
   font-size: 1rem;
   margin: 0 0 5px 0;
-}
-
-/* Éléments */
-
-p {
-  margin: 0 0 20px 0;
 }
 
 ul {
@@ -55,7 +55,7 @@ img {
 
 /* Classe */
 
-.top {
+.box1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -70,18 +70,85 @@ img {
 }
 
 .stage {
+  color: #fefffe;
+  background-color: #009999;
   min-width: 80%;
   position: relative;
-  background: rgba(219, 238, 244);
   border-radius: 15px;
   box-shadow: 0 0 0 black;
   padding: 15px;
+  margin: 15px 0;
 }
+
+.stage ul li img {
+  color: #fefffe;
+}
+
+.softSkills {
+  font-size: 100%;
+  border: solid;
+  border-radius: 50px;
+  padding: 15px;
+  margin: 0 50px;
+}
+
+.box2 {
+}
+
+.qualifications,
+.training,
+.experiencesPro {
+  background: #fefffe;
+  min-height: 500px;
+  width: 50%;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: left;
+  margin: 20px auto;
+  vertical-align: middle;
+  box-shadow: 3px 4px 8px 0px rgba(43, 121, 160, 0.829);
+  display: flex;
+  align-items: center;
+}
+
+.hardSkills {
+  background: #fefffe;
+  min-height: 500px;
+  width: 50%;
+  padding: 15px;
+  border-radius: 15px;
+  text-align: left;
+  margin: 20px auto;
+  vertical-align: middle;
+  box-shadow: 3px 4px 8px 0px rgba(43, 121, 160, 0.829);
+  display: flex;
+  align-items: center;
+}
+
+.qualifications h2,
+.training h2,
+.experiencesPro h2 {
+  width: 300px;
+  justify-content: space-around;
+  align-items: center;
+  text-align: left;
+}
+
+.training1,
+.training2,
+.qualifications1,
+.qualifications2,
+.experiencesPro1,
+.experiencesPro2 {
+  margin: 0 0 15px 0;
+}
+
 /* id */
 #PhotoPro {
   border-radius: 15px;
-  max-height:100%;
-  width:auto;
+  max-height: 100%;
+  width: auto;
+  margin: 0 50px;
 }
 
 .contact li img {
