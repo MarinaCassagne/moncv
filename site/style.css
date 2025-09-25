@@ -5,29 +5,30 @@
 
 body {
   font-family: Segoe UI, sans-serif;
-  color: rgb(0, 32, 96);
   background: #e9ebf8;
 }
 
 header {
   background: #fefffe;
+  color: rgb(0, 32, 96);
   min-height: 500px;
-  width: 90%;
+  width: 45%;
   padding: 15px;
   border-radius: 15px;
+  font-size: 1.1rem;
   text-align: left;
   margin: 20px auto;
   vertical-align: middle;
   box-shadow: 3px 4px 8px 0px rgba(43, 121, 160, 0.829);
   display: flex;
-  justify-content: space-between;
+  position:relative;
+
   align-items: center;
 }
 
 main {
 }
 
-/* Éléments */
 
 h1 {
   font-size: 2rem;
@@ -37,7 +38,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin: 0 0 5px 0;
 }
 
@@ -53,25 +54,27 @@ img {
   margin: 6px;
 }
 
-/* Classe */
-
 .box1 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-.vignette p {
+#PhotoPro {
+  display: block;
+  border-radius: 15px;
+  max-height: 100%;
+  width: auto;
+  margin: 0 50px;
+}
+
+.FirstNameLastNameFonction p {
   padding: 0 0 0 15px;
 }
 
-.contact {
-  margin: 15px;
-}
 
 .stage {
-  color: #fefffe;
-  background-color: #009999;
+  background-color: #e9ebf8;
   min-width: 80%;
   position: relative;
   border-radius: 15px;
@@ -80,17 +83,30 @@ img {
   margin: 15px 0;
 }
 
-.stage ul li img {
-  color: #fefffe;
+.contact {
+  margin: 15px;
+}
+
+.contact li img {
+  vertical-align: middle;
 }
 
 .softSkills {
-  font-size: 100%;
-  border: solid;
-  border-radius: 50px;
+  color:#fefffe;
+  background: #8D818C;
+  height: 40%;
+  width: 20%;
+  position:absolute;
+  top:25%;
+  right: -13%;
+  font-size: 1.1rem;
+  border-radius: 150px;
   padding: 15px;
   margin: 0 50px;
-}
+  text-align: center;
+ }
+
+
 
 .box2 {
 }
@@ -98,20 +114,6 @@ img {
 .qualifications,
 .training,
 .experiencesPro {
-  background: #fefffe;
-  min-height: 500px;
-  width: 50%;
-  padding: 15px;
-  border-radius: 15px;
-  text-align: left;
-  margin: 20px auto;
-  vertical-align: middle;
-  box-shadow: 3px 4px 8px 0px rgba(43, 121, 160, 0.829);
-  display: flex;
-  align-items: center;
-}
-
-.hardSkills {
   background: #fefffe;
   min-height: 500px;
   width: 50%;
@@ -143,17 +145,21 @@ img {
   margin: 0 0 15px 0;
 }
 
-/* id */
-#PhotoPro {
+.hardSkills {
+  background: #fefffe;
+  min-height: 500px;
+  width: 50%;
+  padding: 15px;
   border-radius: 15px;
-  max-height: 100%;
-  width: auto;
-  margin: 0 50px;
+  text-align: left;
+  margin: 20px auto;
+  vertical-align: middle;
+  box-shadow: 3px 4px 8px 0px rgba(43, 121, 160, 0.829);
+  display: flex;
+  align-items: center;
 }
 
-.contact li img {
-  vertical-align: middle;
-}
+
 
 .stage li img {
   vertical-align: middle;
