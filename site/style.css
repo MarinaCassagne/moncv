@@ -1,3 +1,53 @@
+/* 
+
+Couleurs charte graphique 
+
+CSS HEX
+--white: #fefffeff;
+--cerulean: #2b79a0ff;
+--dark-cyan: #009999ff;
+--penn-blue: #002060ff;
+--light-red: #ff6b6bff;
+
+CSS HSL
+--white: hsla(120, 100%, 100%, 1);
+--cerulean: hsla(200, 58%, 40%, 1);
+--dark-cyan: hsla(180, 100%, 30%, 1);
+--penn-blue: hsla(220, 100%, 19%, 1);
+--light-red: hsla(0, 100%, 71%, 1);
+
+SCSS HEX 
+$white: #fefffeff;
+$cerulean: #2b79a0ff;
+$dark-cyan: #009999ff;
+$penn-blue: #002060ff;
+$light-red: #ff6b6bff;
+
+SCSS HSL
+$white: hsla(120, 100%, 100%, 1);
+$cerulean: hsla(200, 58%, 40%, 1);
+$dark-cyan: hsla(180, 100%, 30%, 1);
+$penn-blue: hsla(220, 100%, 19%, 1);
+$light-red: hsla(0, 100%, 71%, 1);
+
+SCSS RGB
+$white: rgba(254, 255, 254, 1);
+$cerulean: rgba(43, 121, 160, 1);
+$dark-cyan: rgba(0, 153, 153, 1);
+$penn-blue: rgba(0, 32, 96, 1);
+$light-red: rgba(255, 107, 107, 1);
+
+SCSS Gradient
+$gradient-top: linear-gradient(0deg, #fefffeff, #2b79a0ff, #009999ff, #002060ff, #ff6b6bff);
+$gradient-right: linear-gradient(90deg, #fefffeff, #2b79a0ff, #009999ff, #002060ff, #ff6b6bff);
+$gradient-bottom: linear-gradient(180deg, #fefffeff, #2b79a0ff, #009999ff, #002060ff, #ff6b6bff);
+$gradient-left: linear-gradient(270deg, #fefffeff, #2b79a0ff, #009999ff, #002060ff, #ff6b6bff);
+$gradient-top-right: linear-gradient(45deg, #fefffeff, #2b79a0ff, #009999ff, #002060ff, #ff6b6bff);
+$gradient-bottom-right: linear-gradient(135deg, #fefffeff, #2b79a0ff, #009999ff, #002060ff, #ff6b6bff);
+$gradient-top-left: linear-gradient(225deg, #fefffeff, #2b79a0ff, #009999ff, #002060ff, #ff6b6bff);
+$gradient-bottom-left: linear-gradient(315deg, #fefffeff, #2b79a0ff, #009999ff, #002060ff, #ff6b6bff);
+$gradient-radial: radial-gradient(#fefffeff, #2b79a0ff, #009999ff, #002060ff, #ff6b6bff); */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +62,7 @@ header {
   background: #fefffe;
   color: rgb(0, 32, 96);
   min-height: 500px;
-  width: 45%;
+  width: 65%;
   padding: 15px;
   border-radius: 15px;
   font-size: 1.1rem;
@@ -21,14 +71,9 @@ header {
   vertical-align: middle;
   box-shadow: 3px 4px 8px 0px rgba(43, 121, 160, 0.829);
   display: flex;
-  position:relative;
-
+  position: relative;
   align-items: center;
 }
-
-main {
-}
-
 
 h1 {
   font-size: 2rem;
@@ -47,6 +92,7 @@ ul {
 }
 
 li {
+  font-size: 1rem;
   list-style-type: none;
 }
 
@@ -63,7 +109,7 @@ img {
 #PhotoPro {
   display: block;
   border-radius: 15px;
-  max-height: 100%;
+  height: 435px;
   width: auto;
   margin: 0 50px;
 }
@@ -71,7 +117,6 @@ img {
 .FirstNameLastNameFonction p {
   padding: 0 0 0 15px;
 }
-
 
 .stage {
   background-color: #e9ebf8;
@@ -92,23 +137,39 @@ img {
 }
 
 .softSkills {
-  color:#fefffe;
-  background: #8D818C;
-  height: 40%;
-  width: 20%;
-  position:absolute;
-  top:25%;
-  right: -13%;
+  color: #fefffe;
+  background: #ff6b6b;
+  height: 180px;
+  width: 180px;
+  position: absolute;
+  top: 25%;
+  right: -12%;
   font-size: 1.1rem;
   border-radius: 150px;
   padding: 15px;
   margin: 0 50px;
+  display: grid;
+  place-items: center;
+  align-content: center;
   text-align: center;
- }
+}
 
+.softSkills h2,
+.softSkills li {
+  font-size: small;
+}
 
+main {
+  color: rgb(0, 32, 96);
+  display: flex;
+  align-items: center;
+}
 
 .box2 {
+  background: gray;
+  width: 80%;
+  display: grid;
+  justify-content: left;
 }
 
 .qualifications,
@@ -116,24 +177,20 @@ img {
 .experiencesPro {
   background: #fefffe;
   min-height: 500px;
-  width: 50%;
+  width: 950px;
   padding: 15px;
   border-radius: 15px;
   text-align: left;
   margin: 20px auto;
-  vertical-align: middle;
   box-shadow: 3px 4px 8px 0px rgba(43, 121, 160, 0.829);
-  display: flex;
-  align-items: center;
+  display: grid;
+  vertical-align: middle;
+  align-content: center;
 }
 
 .qualifications h2,
 .training h2,
 .experiencesPro h2 {
-  width: 300px;
-  justify-content: space-around;
-  align-items: center;
-  text-align: left;
 }
 
 .training1,
@@ -158,8 +215,6 @@ img {
   display: flex;
   align-items: center;
 }
-
-
 
 .stage li img {
   vertical-align: middle;
